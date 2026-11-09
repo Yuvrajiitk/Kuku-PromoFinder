@@ -166,7 +166,6 @@ if "pf_results" not in st.session_state:
     with c:
         metric("03 / EXPORT", "CSV + JSON")
         st.caption("Save promo recommendations and quality checks.")
-    st.warning("**Confidentiality:** Kuku supplied the screenplays for this assignment. Do not upload them to an externally hosted service unless Kuku permits that processing. For a public demo, use synthetic data.")
 else:
     results = st.session_state["pf_results"]
     audit = st.session_state["pf_audit"]
